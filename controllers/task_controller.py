@@ -5,7 +5,7 @@ class TaskController:
         self.tasks = []
         self.next_id = 1
 
-    def add_task(self, title, description=""):
+    def add_task(self, title, description=""): 
         task = Task(self.next_id, title, description)
         self.tasks.append(task)
         self.next_id += 1
